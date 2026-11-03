@@ -4,20 +4,20 @@ import Ellipse2 from '../../assets/Ellipse 167.png'
 import Ellipse3 from '../../assets/Ellipse 168.png'
 import Daire1 from '../../assets/daire1.png'
 import Daire2 from '../../assets/daire2.png'
-import Daire3 from '../../assets/daire 3.png'
+import Daire3 from '../../assets/daire3.png'
 
 const SubscribeSection = () => {
   return (
     <div className='w-full h-[500px] flex justify-center items-center relative'>
       <div className='w-[85%] h-[80%] bg-[#0A033C] rounded-[20px] flex flex-col justify-center items-center text-center relative overflow-hidden px-4'>
-        <img src={Ellipse3} alt="sekil" className='absolute top-15 left-10 w-[60px] h-[60px] object-cover' />
-        <img src={Ellipse1} alt="sekil" className='absolute bottom-15 left-17 w-[60px] h-[60px] object-cover' />
-        <img src={Ellipse2} alt="sekil" className='absolute bottom-45 left-[15%] w-[60px] h-[60px] object-cover' />
-        <img src={Daire1} alt="sekil" className='absolute top-15 right-17 w-[60px] h-[60px] object-cover' />
-        <img src={Daire3} alt="sekil" className='absolute bottom-15 right-10 w-[60px] h-[60px] object-cover' />
-        <img src={Daire2} alt="sekil" className='absolute top-45 right-[15%] w-[60px] h-[60px] object-cover' />
+        <img src={Ellipse3} alt="sekil" className='absolute top-15 left-10 w-[60px] h-[60px] object-cover rounded-full' />
+        <img src={Ellipse1} alt="sekil" className='absolute bottom-15 left-17 w-[60px] h-[60px] object-cover rounded-full' />
+        <img src={Ellipse2} alt="sekil" className='absolute bottom-45 left-[15%] w-[60px] h-[60px] object-cover rounded-full' />
+        <img src={Daire1} alt="sekil" className='absolute top-15 right-17 w-[60px] h-[60px] object-cover rounded-full' />
+        <img src={Daire3} alt="sekil" className='absolute bottom-15 right-10 w-[60px] h-[60px] object-cover rounded-full' />
+        <img src={Daire2} alt="sekil" className='absolute top-45 right-[15%] w-[60px] h-[60px] object-cover rounded-full' />
         <div className='max-w-[600px] flex flex-col items-center justify-center gap-[23px] z-10'>
-          <h1 className='text-4xl md:5xl font-bold text-[#FFFFFF] leading-[55px] tracking-wide'>
+          <h1 className='text-4xl md:text-5xl font-bold text-[#FFFFFF] leading-[55px] tracking-wide'>
             Subscribe For Get Update <br /> Every New Courses
           </h1>
           <p className='text-[#FFFFFFB2] font-normal text-base leading-[30px] tracking-normal'>
