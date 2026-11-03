@@ -1,86 +1,102 @@
-import React from 'react';
+import React from 'react'
+import kitabImg from '../../assets/kitab.png'
 
 const FooterSection = () => {
-  return (
-    <footer className="bg-[#fbfbfd] py-14 px-6 border-t border-gray-200 font-sans text-gray-500">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
-        
-        {/* Sol Sütun: Logo, Sosyal Medya ve Telif Hakları */}
-        <div className="md:col-span-1 space-y-4">
-          <div className="flex items-center gap-2 text-2xl font-bold text-gray-900">
-            <span className="bg-[#ff5722] text-white px-2.5 py-1 rounded-lg text-lg">📖</span>
-            <span>Eduvi</span>
-          </div>
-          
-          <div className="flex gap-2.5 pt-2">
-            <a href="#" className="w-8 h-8 rounded-full bg-gray-800 text-white flex items-center justify-center font-bold text-xs hover:bg-[#ff5722] transition-colors">f</a>
-            <a href="#" className="w-8 h-8 rounded-full bg-[#ff5722] text-white flex items-center justify-center text-xs">📷</a>
-            <a href="#" className="w-8 h-8 rounded-full bg-gray-800 text-white flex items-center justify-center text-xs hover:bg-[#ff5722] transition-colors">🐦</a>
-            <a href="#" className="w-8 h-8 rounded-full bg-gray-800 text-white flex items-center justify-center font-bold text-xs hover:bg-[#ff5722] transition-colors">in</a>
-          </div>
 
-          <div className="text-sm space-y-1 pt-2">
-            <p className="text-gray-600 font-medium">©2021 Eduvi.co</p>
-            <p className="text-xs text-gray-400 leading-relaxed">
-              Eduvi is a registered trademark of Eduvi.co
-            </p>
-          </div>
-        </div>
+    // Müəllimin dediyi kimi click funksiyası yazdım
+    const handleClick = (name) => {
+        console.log(name + ' klikləndi!')
+    }
 
-        {/* 1. Sütun: Courses */}
-        <div>
-          <h3 className="text-gray-900 font-semibold text-base mb-4">Courses</h3>
-          <ul className="space-y-3 text-sm">
-            <li><a href="#" className="hover:text-[#ff5722] transition-colors">Classroom courses</a></li>
-            <li><a href="#" className="hover:text-[#ff5722] transition-colors">Virtual classroom courses</a></li>
-            <li><a href="#" className="hover:text-[#ff5722] transition-colors">E-learning courses</a></li>
-            <li><a href="#" className="hover:text-[#ff5722] transition-colors">Video Courses</a></li>
-            <li><a href="#" className="hover:text-[#ff5722] transition-colors">Offline Courses</a></li>
-          </ul>
-        </div>
+    return (
+        <footer className='w-full bg-[#fbfbfd] border-t border-gray-200 pt-[60px] pb-[45px] px-6'>
+            <div className='max-w-[1250px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-[40px]'>
 
-        {/* 2. Sütun: Community */}
-        <div>
-          <h3 className="text-gray-900 font-semibold text-base mb-4">Community</h3>
-          <ul className="space-y-3 text-sm">
-            <li><a href="#" className="hover:text-[#ff5722] transition-colors">Learners</a></li>
-            <li><a href="#" className="hover:text-[#ff5722] transition-colors">Parteners</a></li>
-            <li><a href="#" className="hover:text-[#ff5722] transition-colors">Developers</a></li>
-            <li><a href="#" className="hover:text-[#ff5722] transition-colors">Transactions</a></li>
-            <li><a href="#" className="hover:text-[#ff5722] transition-colors">Blog</a></li>
-            <li><a href="#" className="hover:text-[#ff5722] transition-colors">Teaching Center</a></li>
-          </ul>
-        </div>
 
-        {/* 3. Sütun: Quick links */}
-        <div>
-          <h3 className="text-gray-900 font-semibold text-base mb-4">Quick links</h3>
-          <ul className="space-y-3 text-sm">
-            <li><a href="#" className="hover:text-[#ff5722] transition-colors">Home</a></li>
-            <li><a href="#" className="hover:text-[#ff5722] transition-colors">Professional Education</a></li>
-            <li><a href="#" className="hover:text-[#ff5722] transition-colors">Courses</a></li>
-            <li><a href="#" className="hover:text-[#ff5722] transition-colors">Admissions</a></li>
-            <li><a href="#" className="hover:text-[#ff5722] transition-colors">Testimonial</a></li>
-            <li><a href="#" className="hover:text-[#ff5722] transition-colors">Programs</a></li>
-          </ul>
-        </div>
+                <div className='flex flex-col gap-[20px]'>
+                    <div className='flex items-center gap-3'>
+                        <div className='w-[42px] h-[42px] bg-[#ff5722] rounded-[10px] flex items-center justify-center'>
+                            <img src={kitabImg} alt="Eduvi logo" className='w-[25px] h-[25px] object-contain' />
+                        </div>
+                        <h2 className='text-[24px] font-bold text-[#0A033C]'>Eduvi</h2>
+                    </div>
 
-        {/* 4. Sütun: More */}
-        <div>
-          <h3 className="text-gray-900 font-semibold text-base mb-4">More</h3>
-          <ul className="space-y-3 text-sm">
-            <li><a href="#" className="hover:text-[#ff5722] transition-colors">Press</a></li>
-            <li><a href="#" className="hover:text-[#ff5722] transition-colors">Investors</a></li>
-            <li><a href="#" className="hover:text-[#ff5722] transition-colors">Terms</a></li>
-            <li><a href="#" className="hover:text-[#ff5722] transition-colors">Privacy</a></li>
-            <li><a href="#" className="hover:text-[#ff5722] transition-colors">Help</a></li>
-            <li><a href="#" className="hover:text-[#ff5722] transition-colors">Contact</a></li>
-          </ul>
-        </div>
 
-      </div>
-    </footer>
-  );
-};
+                    <div className='flex gap-3'>
+                        <button type="button" onClick={() => handleClick('Facebook')} className='w-[34px] h-[34px] rounded-full bg-[#0A033C] text-white flex items-center justify-center hover:bg-[#ff5722] duration-200'>
+                            <i className='fa-brands fa-facebook-f text-xs'></i>
+                        </button>
+                        <button type="button" onClick={() => handleClick('Instagram')} className='w-[34px] h-[34px] rounded-full bg-[#ff5722] text-white flex items-center justify-center hover:opacity-80 duration-200'>
+                            <i className='fa-brands fa-instagram text-xs'></i>
+                        </button>
+                        <button type="button" onClick={() => handleClick('Twitter')} className='w-[34px] h-[34px] rounded-full bg-[#0A033C] text-white flex items-center justify-center hover:bg-[#ff5722] duration-200'>
+                            <i className='fa-brands fa-twitter text-xs'></i>
+                        </button>
+                        <button type="button" onClick={() => handleClick('LinkedIn')} className='w-[34px] h-[34px] rounded-full bg-[#0A033C] text-white flex items-center justify-center hover:bg-[#ff5722] duration-200'>
+                            <i className='fa-brands fa-linkedin-in text-xs'></i>
+                        </button>
+                    </div>
 
-export default FooterSection;
+                    <div className='text-sm text-gray-500 leading-[25px]'>
+                        <p>©2021 Eduvi.co</p>
+                        <p className='text-xs'>Eduvi is a registered trademark</p>
+                    </div>
+                </div>
+
+
+                <div>
+                    <h3 className='text-[#0A033C] text-[17px] font-semibold mb-[20px]'>Courses</h3>
+                    <ul className='flex flex-col gap-[13px] text-sm text-gray-500'>
+                        <li><button type="button" onClick={() => handleClick('Classroom courses')} className='hover:text-[#ff5722]'>Classroom courses</button></li>
+                        <li><button type="button" onClick={() => handleClick('Virtual classroom courses')} className='hover:text-[#ff5722]'>Virtual classroom courses</button></li>
+                        <li><button type="button" onClick={() => handleClick('E-learning courses')} className='hover:text-[#ff5722]'>E-learning courses</button></li>
+                        <li><button type="button" onClick={() => handleClick('Video Courses')} className='hover:text-[#ff5722]'>Video Courses</button></li>
+                        <li><button type="button" onClick={() => handleClick('Offline Courses')} className='hover:text-[#ff5722]'>Offline Courses</button></li>
+                    </ul>
+                </div>
+
+
+                <div>
+                    <h3 className='text-[#0A033C] text-[17px] font-semibold mb-[20px]'>Community</h3>
+                    <ul className='flex flex-col gap-[13px] text-sm text-gray-500'>
+                        <li><button type="button" onClick={() => handleClick('Learners')} className='hover:text-[#ff5722]'>Learners</button></li>
+                        <li><button type="button" onClick={() => handleClick('Partners')} className='hover:text-[#ff5722]'>Partners</button></li>
+                        <li><button type="button" onClick={() => handleClick('Developers')} className='hover:text-[#ff5722]'>Developers</button></li>
+                        <li><button type="button" onClick={() => handleClick('Transactions')} className='hover:text-[#ff5722]'>Transactions</button></li>
+                        <li><button type="button" onClick={() => handleClick('Blog')} className='hover:text-[#ff5722]'>Blog</button></li>
+                        <li><button type="button" onClick={() => handleClick('Teaching Center')} className='hover:text-[#ff5722]'>Teaching Center</button></li>
+                    </ul>
+                </div>
+
+
+                <div>
+                    <h3 className='text-[#0A033C] text-[17px] font-semibold mb-[20px]'>Quick links</h3>
+                    <ul className='flex flex-col gap-[13px] text-sm text-gray-500'>
+                        <li><button type="button" onClick={() => handleClick('Home')} className='hover:text-[#ff5722]'>Home</button></li>
+                        <li><button type="button" onClick={() => handleClick('Professional Education')} className='hover:text-[#ff5722]'>Professional Education</button></li>
+                        <li><button type="button" onClick={() => handleClick('Courses')} className='hover:text-[#ff5722]'>Courses</button></li>
+                        <li><button type="button" onClick={() => handleClick('Admissions')} className='hover:text-[#ff5722]'>Admissions</button></li>
+                        <li><button type="button" onClick={() => handleClick('Testimonial')} className='hover:text-[#ff5722]'>Testimonial</button></li>
+                        <li><button type="button" onClick={() => handleClick('Programs')} className='hover:text-[#ff5722]'>Programs</button></li>
+                    </ul>
+                </div>
+
+
+                <div>
+                    <h3 className='text-[#0A033C] text-[17px] font-semibold mb-[20px]'>More</h3>
+                    <ul className='flex flex-col gap-[13px] text-sm text-gray-500'>
+                        <li><button type="button" onClick={() => handleClick('Press')} className='hover:text-[#ff5722]'>Press</button></li>
+                        <li><button type="button" onClick={() => handleClick('Investors')} className='hover:text-[#ff5722]'>Investors</button></li>
+                        <li><button type="button" onClick={() => handleClick('Terms')} className='hover:text-[#ff5722]'>Terms</button></li>
+                        <li><button type="button" onClick={() => handleClick('Privacy')} className='hover:text-[#ff5722]'>Privacy</button></li>
+                        <li><button type="button" onClick={() => handleClick('Help')} className='hover:text-[#ff5722]'>Help</button></li>
+                        <li><button type="button" onClick={() => handleClick('Contact')} className='hover:text-[#ff5722]'>Contact</button></li>
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
+    )
+}
+
+export default FooterSection
