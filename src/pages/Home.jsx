@@ -5,7 +5,7 @@ import LessonsSection from '../components/Sections/LessonsSection'
 import SkillsSection from '../components/Sections/SkillsSection'
 import MentorSection from '../components/Sections/MentorSection'
 import SubscribeSection from '../components/Sections/SubscribeSection'
-import Footer from '../components/Footer/Footer'
+import FooterSection from '../components/Sections/FooterSection'
 
 const Home = () => {
   return (
@@ -16,7 +16,7 @@ const Home = () => {
       <SkillsSection />
       <MentorSection />
       <SubscribeSection />
-      <Footer />
+      <FooterSection />
     </>
   )
 }
