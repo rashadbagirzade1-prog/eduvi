@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+.EnkeDiv {
+    width: 100%;
+    height: 140vh;
+    background-color: #F7F5FA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Qualify {
+    font-weight: 700;
+    font-size: 45px;
+    color: #0A033C;
+}
+
+.A {
+    width: 750px;
+    text-align: center;
+    font-size: 20px;
+    color: #5D5A6F;
+    line-height: 40px;
+}
+
+.btn {
+    width: 140px;
+    height: 60px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.Ferqbtn {
+    background-color: #FF6652;
+    border-radius: 10px;
+    color: white;
+}
+
+.EsasDiv {
+    width: 1400px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.Ilkdordlu {
+    width: 100%;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ikinciDordlu {
+    width: 100%;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.B {
+    width: 250px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.Sek {
+    width: 40px;
+    height: 40px;
+}
+
+.Stanh1 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.Standard {
+    font-size: 16px;
+    line-height: 30px;
+    color: #5D5A6F;
+    text-align: center;
+    width: 190px;
+}
+
+.Standard2 {
+    font-size: 16px;
+    line-height: 30px;
+    color: #5D5A6F;
+    text-align: center;
+    width: 220px;
+}
+
+.Standard3 {
+    font-size: 16px;
+    line-height: 30px;
+    color: #5D5A6F;
+    text-align: center;
+    width: 250px;
+}
+
+.Standard4 {
+    font-size: 16px;
+    line-height: 30px;
+    color: #5D5A6F;
+    text-align: center;
+    width: 250px;
+}
+
+.Standard5 {
+    font-size: 16px;
+    line-height: 30px;
+    color: #5D5A6F;
+    text-align: center;
+    width: 240px;
+}
+
+
+.ClassDetails {
+    width: 160px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 1px #9C4DF4;
+    color: #9C4DF4;
+}
+.btn3{
+    font-size: 17px;
+    font-weight: 400;
+    width: 200px;
+    height: 60px;
+    background-color: #9C4DF4;
+    border-radius: 10px;
+    color: white;
+}
